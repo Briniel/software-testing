@@ -8,10 +8,10 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
     WebDriver wd;
 
-    private CreateNewUserHelper createNewUserHelper;
     private SessionHelper sessionHelper;
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
+    private ContactsHelper contactsHelper;
 
     public void init() {
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\ChromDriver\\chromedriver.exe");
@@ -21,7 +21,7 @@ public class ApplicationManager {
         groupHelper = new GroupHelper(wd);
         navigationHelper = new NavigationHelper(wd);
         sessionHelper = new SessionHelper(wd);
-        createNewUserHelper = new CreateNewUserHelper(wd);
+        contactsHelper = new ContactsHelper(wd);
         sessionHelper.login("admin", "secret");
     }
 
@@ -37,7 +37,7 @@ public class ApplicationManager {
         return navigationHelper;
     }
 
-    public CreateNewUserHelper getCreateNewUserHelper() {
-        return createNewUserHelper;
+    public ContactsHelper getContactsHelper() {
+        return contactsHelper;
     }
 }

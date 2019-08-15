@@ -59,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GroupDeletTest">
+  <component name="RunManager">
     <configuration name="GroupCreatTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -79,6 +79,40 @@
       </ExternalSystemSettings>
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
+    </configuration>
+    <configuration name="ContactsCreatTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.appmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.ContactsCreatTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactsDelete" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.ContactsDelete" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="GroupCreatTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web.test" />
@@ -122,33 +156,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCreatTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.appmanager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.UserCreatTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Gradle.GroupCreatTest" />
       <item itemvalue="TestNG.GroupCreatTest" />
-      <item itemvalue="TestNG.UserCreatTest" />
+      <item itemvalue="TestNG.ContactsCreatTest" />
       <item itemvalue="TestNG.GroupDeletTest" />
+      <item itemvalue="TestNG.ContactsDelete" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactsCreatTest" />
+        <item itemvalue="TestNG.ContactsDelete" />
         <item itemvalue="TestNG.GroupDeletTest" />
-        <item itemvalue="TestNG.UserCreatTest" />
         <item itemvalue="TestNG.GroupCreatTest" />
         <item itemvalue="Gradle.GroupCreatTest" />
       </list>
