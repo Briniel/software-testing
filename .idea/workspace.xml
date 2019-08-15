@@ -52,11 +52,16 @@
   <component name="ProjectId" id="1PQsP6eyVYOd7amVMKfkzAFH52b" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web/src/test/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\prog\Progect\software-testing\addressbook-web\src\test\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -70,14 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.EquationTest">
-    <configuration name="FirstProg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.FirstProg" />
-      <module name="sandbox.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.GroupCreatTest">
     <configuration name="GroupCreatTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -155,20 +153,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GroupCreatTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.GroupCreatTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.FirstProg" />
       <item itemvalue="Gradle.GroupCreatTest" />
       <item itemvalue="Gradle.PointTest" />
       <item itemvalue="Gradle.PointTest.testArea" />
       <item itemvalue="TestNG.EquationTest" />
+      <item itemvalue="TestNG.GroupCreatTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupCreatTest" />
         <item itemvalue="TestNG.EquationTest" />
         <item itemvalue="Gradle.GroupCreatTest" />
         <item itemvalue="Gradle.PointTest.testArea" />
         <item itemvalue="Gradle.PointTest" />
-        <item itemvalue="Application.FirstProg" />
       </list>
     </recent_temporary>
   </component>
@@ -197,5 +212,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/test/GroupCreatTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
