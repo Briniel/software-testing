@@ -56,7 +56,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -70,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.GroupCreatTest">
+  <component name="RunManager" selected="TestNG.EquationTest">
     <configuration name="FirstProg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.FirstProg" />
       <module name="sandbox.main" />
@@ -138,14 +138,33 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="EquationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.EquationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.FirstProg" />
       <item itemvalue="Gradle.GroupCreatTest" />
       <item itemvalue="Gradle.PointTest" />
       <item itemvalue="Gradle.PointTest.testArea" />
+      <item itemvalue="TestNG.EquationTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.EquationTest" />
         <item itemvalue="Gradle.GroupCreatTest" />
         <item itemvalue="Gradle.PointTest.testArea" />
         <item itemvalue="Gradle.PointTest" />
