@@ -42,7 +42,7 @@ public class ContactsHelper extends HelperBase {
     }
 
     public void selectContact() {
-        click(By.xpath("//*[@title='Select (Mikhail Ivanov)']"));
+        click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td/input"));
     }
 
     public void deleteSelectContact() {
