@@ -2,7 +2,9 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactsData;
+import ru.stqa.pft.addressbook.model.GroupData;
 
 public class ContactsHelper extends HelperBase {
 
@@ -11,7 +13,7 @@ public class ContactsHelper extends HelperBase {
         super(wd);
     }
 
-    public void createContact(ContactsData contactsData) {
+    public void createContact(ContactsData contactsData, boolean creation) {
         type(By.name("firstname"), contactsData.getFirstName());
         type(By.name("middlename"), contactsData.getMiddleName());
         type(By.name("lastname"), contactsData.getLastName());
@@ -20,19 +22,11 @@ public class ContactsHelper extends HelperBase {
         type(By.name("address"), contactsData.getAddress());
         type(By.name("home"), contactsData.getHomePhone());
         type(By.name("mobile"), contactsData.getMobilePhone());
-        dropdownListSelect(By.name("new_group"), contactsData.getGroup());
-        type(By.name("work"), contactsData.getWorkPhone());
-        type(By.name("email"), contactsData.getEmail());
-        dropdownListSelect(By.name("bday"), contactsData.getBday());
-        dropdownListSelect(By.name("bmonth"), contactsData.getBmount());
-        type(By.name("byear"), contactsData.getByear());
-    }
-
-    public void updateContact(ContactsData contactsData) {
-        type(By.name("company"), contactsData.getCompany());
-        type(By.name("nickname"), contactsData.getNickName());
-        type(By.name("home"), contactsData.getHomePhone());
-        type(By.name("mobile"), contactsData.getMobilePhone());
+        if (creation){
+            dropdownListSelect(By.name("new_group"), contactsData.getGroup());
+        } else {
+            Assert.assertFalse(isElementPresent(By.name("new_group")), "На форме модификации контакта появилось поля группы");
+        }
         type(By.name("work"), contactsData.getWorkPhone());
         type(By.name("email"), contactsData.getEmail());
     }
@@ -63,5 +57,20 @@ public class ContactsHelper extends HelperBase {
 
     public void returnHomePage() {
         click(By.linkText("home page"));
+    }
+
+    public boolean isThereAContact() {
+        return isElementPresent(By.xpath("(xpath=(//input[@name='update'])[2]"));
+    }
+
+    public void goToUserCreatePage() {
+        click(By.linkText("add new"));
+    }
+
+    public void contactCreate(ContactsData contact) {
+        goToUserCreatePage();
+        createContact(contact, true);
+        submitContactCreation();
+        returnHomePage();
     }
 }
