@@ -12,7 +12,7 @@ public class GroupCreatTest extends BaseTest {
     public void testGroupCreat() throws Exception {
         app.getNavigationHelper().goToGroupsPage();
         List<GroupData> before = app.getGroupHelper().getGroupList();
-        app.getGroupHelper().creatGroup(new GroupData("test-4", null, "New group"));
+        app.getGroupHelper().creatGroup(new GroupData("test-5", null, "New group"));
         List<GroupData> after = app.getGroupHelper().getGroupList();
         Assert.assertEquals(after.size(), before.size() + 1);
     }
