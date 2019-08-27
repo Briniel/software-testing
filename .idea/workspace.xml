@@ -177,10 +177,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.GroupCreatTest" />
+        <item itemvalue="TestNG.GroupModificationTest.testGroupModificationTest" />
         <item itemvalue="TestNG.GroupModificationTest" />
         <item itemvalue="TestNG.GroupDeletTest" />
         <item itemvalue="TestNG.GroupDeletTest.testGroupDelet" />
-        <item itemvalue="TestNG.GroupModificationTest.testGroupModificationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -209,21 +209,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/test/GroupModificationTest.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/Assert.java</url>
-          <line>1019</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
