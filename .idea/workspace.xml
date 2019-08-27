@@ -129,17 +129,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeTest.testNotPrime" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
+    <configuration name="GroupModificationTest.testGroupModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.PrimeTest" />
-      <option name="METHOD_NAME" value="testNotPrime" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.GroupModificationTest" />
+      <option name="METHOD_NAME" value="testGroupModificationTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -166,19 +166,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.PrimeTest.testNotPrime" />
       <item itemvalue="TestNG.PrimeTest.testPrime" />
       <item itemvalue="Application.Collections" />
       <item itemvalue="TestNG.GroupCreatTest.testGroupCreat" />
       <item itemvalue="TestNG.GroupDeletTest.testGroupDelet" />
+      <item itemvalue="TestNG.GroupModificationTest.testGroupModificationTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.GroupDeletTest.testGroupDelet" />
+        <item itemvalue="TestNG.GroupModificationTest.testGroupModificationTest" />
         <item itemvalue="TestNG.GroupCreatTest.testGroupCreat" />
         <item itemvalue="Application.Collections" />
         <item itemvalue="TestNG.PrimeTest.testPrime" />
-        <item itemvalue="TestNG.PrimeTest.testNotPrime" />
       </list>
     </recent_temporary>
   </component>
@@ -207,16 +207,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/test/GroupDeletTest.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
