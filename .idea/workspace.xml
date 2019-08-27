@@ -52,6 +52,7 @@
   <component name="ProjectId" id="1PQsP6eyVYOd7amVMKfkzAFH52b" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web/src/test/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -59,6 +60,9 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.stqa.pft.sandbox" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\prog\Progect\software-testing\addressbook-web\src\test\resources" />
     </key>
@@ -75,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Collections">
+  <component name="RunManager" selected="TestNG.GroupDeletTest.testGroupDelet">
     <configuration name="Collections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.Collections" />
       <module name="sandbox.main" />
@@ -89,17 +93,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
+    <configuration name="GroupCreatTest.testGroupCreat" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.PrimeTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.GroupCreatTest" />
+      <option name="METHOD_NAME" value="testGroupCreat" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupDeletTest.testGroupDelet" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.GroupDeletTest" />
+      <option name="METHOD_NAME" value="testGroupDelet" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -142,38 +165,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeTest.testPrimes" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.PrimeTest" />
-      <option name="METHOD_NAME" value="testPrimes" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="TestNG.PrimeTest.testPrimes" />
-      <item itemvalue="TestNG.PrimeTest" />
       <item itemvalue="TestNG.PrimeTest.testNotPrime" />
       <item itemvalue="TestNG.PrimeTest.testPrime" />
       <item itemvalue="Application.Collections" />
+      <item itemvalue="TestNG.GroupCreatTest.testGroupCreat" />
+      <item itemvalue="TestNG.GroupDeletTest.testGroupDelet" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupDeletTest.testGroupDelet" />
+        <item itemvalue="TestNG.GroupCreatTest.testGroupCreat" />
         <item itemvalue="Application.Collections" />
         <item itemvalue="TestNG.PrimeTest.testPrime" />
         <item itemvalue="TestNG.PrimeTest.testNotPrime" />
-        <item itemvalue="TestNG.PrimeTest" />
-        <item itemvalue="TestNG.PrimeTest.testPrimes" />
       </list>
     </recent_temporary>
   </component>
