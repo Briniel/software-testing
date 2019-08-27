@@ -79,20 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GroupDeletTest">
-    <configuration name="Collections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.Collections" />
-      <module name="sandbox.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.GroupModificationTest">
     <configuration name="GroupCreatTest.testGroupCreat" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web.test" />
       <extension name="coverage">
@@ -146,6 +133,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GroupModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.GroupModificationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GroupModificationTest.testGroupModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web.test" />
       <extension name="coverage">
@@ -165,19 +169,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Collections" />
       <item itemvalue="TestNG.GroupCreatTest.testGroupCreat" />
       <item itemvalue="TestNG.GroupDeletTest.testGroupDelet" />
       <item itemvalue="TestNG.GroupModificationTest.testGroupModificationTest" />
       <item itemvalue="TestNG.GroupDeletTest" />
+      <item itemvalue="TestNG.GroupModificationTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupModificationTest" />
         <item itemvalue="TestNG.GroupDeletTest" />
         <item itemvalue="TestNG.GroupDeletTest.testGroupDelet" />
         <item itemvalue="TestNG.GroupModificationTest.testGroupModificationTest" />
         <item itemvalue="TestNG.GroupCreatTest.testGroupCreat" />
-        <item itemvalue="Application.Collections" />
       </list>
     </recent_temporary>
   </component>
@@ -206,5 +210,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/test/GroupModificationTest.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/Assert.java</url>
+          <line>1019</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
