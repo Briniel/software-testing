@@ -79,8 +79,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GroupModificationTest">
-    <configuration name="GroupCreatTest.testGroupCreat" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.GroupCreatTest">
+    <configuration name="GroupCreatTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web.test" />
       <extension name="coverage">
         <pattern>
@@ -90,8 +90,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.GroupCreatTest" />
-      <option name="METHOD_NAME" value="testGroupCreat" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -169,19 +168,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.GroupCreatTest.testGroupCreat" />
       <item itemvalue="TestNG.GroupDeletTest.testGroupDelet" />
       <item itemvalue="TestNG.GroupModificationTest.testGroupModificationTest" />
       <item itemvalue="TestNG.GroupDeletTest" />
       <item itemvalue="TestNG.GroupModificationTest" />
+      <item itemvalue="TestNG.GroupCreatTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupCreatTest" />
         <item itemvalue="TestNG.GroupModificationTest" />
         <item itemvalue="TestNG.GroupDeletTest" />
         <item itemvalue="TestNG.GroupDeletTest.testGroupDelet" />
         <item itemvalue="TestNG.GroupModificationTest.testGroupModificationTest" />
-        <item itemvalue="TestNG.GroupCreatTest.testGroupCreat" />
       </list>
     </recent_temporary>
   </component>
