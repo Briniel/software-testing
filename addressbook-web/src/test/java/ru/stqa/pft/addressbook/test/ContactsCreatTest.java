@@ -19,7 +19,7 @@ public class ContactsCreatTest extends BaseTest {
                 .withHomePhone("96-08-56").withMobilePhone("89272106632").withWorkPhone("89457257986").withGroup("test-1").withEmail("dragon1239@mail.ru");
         app.contacts().contactCreate(contact);
         Contacts after = app.contacts().all();
-        assertEquals(after.size(), before.size() + 1);
+        assertThat(after.size(), equalTo(before.size() + 1));
         assertThat(after, equalTo(
                 before.withAdded(contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
     }

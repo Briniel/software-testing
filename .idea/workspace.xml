@@ -30,7 +30,12 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="sandbox" type="f1a62948:ProjectNode" />
+                <item name="addressbook-web" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="addressbook-web" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -38,6 +43,9 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="sandbox" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -64,7 +72,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -86,7 +94,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreatTest">
+  <component name="RunManager" selected="TestNG.ContactsCreatTest">
     <configuration name="addressbook-web" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -105,7 +113,7 @@
       <method v="2" />
     </configuration>
     <configuration name="ContactModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="software-testing.addressbook-web.test" />
+      <module name="addressbook-web.test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
@@ -121,8 +129,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactsCreatTest.testUserCreat" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="software-testing.addressbook-web.test" />
+    <configuration name="ContactsCreatTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web.test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
@@ -131,16 +139,15 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.ContactsCreatTest" />
-      <option name="METHOD_NAME" value="testUserCreat" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupCreatTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="software-testing.addressbook-web.test" />
+    <configuration name="GroupCreatTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web.test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
@@ -157,7 +164,7 @@
       </method>
     </configuration>
     <configuration name="ru.stqa.pft.addressbook.test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="software-testing.addressbook-web.test" />
+      <module name="addressbook-web.test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
@@ -174,17 +181,17 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.addressbook-web" />
-      <item itemvalue="TestNG.ContactModificationTest" />
-      <item itemvalue="TestNG.ContactsCreatTest.testUserCreat" />
+      <item itemvalue="TestNG.GroupCreatTest (1)" />
       <item itemvalue="TestNG.ru.stqa.pft.addressbook.test" />
-      <item itemvalue="TestNG.GroupCreatTest" />
+      <item itemvalue="TestNG.ContactModificationTest" />
+      <item itemvalue="TestNG.ContactsCreatTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GroupCreatTest" />
-        <item itemvalue="TestNG.ru.stqa.pft.addressbook.test" />
-        <item itemvalue="TestNG.ContactsCreatTest.testUserCreat" />
+        <item itemvalue="TestNG.ContactsCreatTest" />
         <item itemvalue="TestNG.ContactModificationTest" />
+        <item itemvalue="TestNG.ru.stqa.pft.addressbook.test" />
+        <item itemvalue="TestNG.GroupCreatTest (1)" />
         <item itemvalue="Gradle.addressbook-web" />
       </list>
     </recent_temporary>
@@ -214,5 +221,46 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactsHelper.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/test/ContactsCreatTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactsHelper.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactsHelper.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactsHelper.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactsHelper.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactsHelper.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

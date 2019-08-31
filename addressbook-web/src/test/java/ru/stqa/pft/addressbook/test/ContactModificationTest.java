@@ -25,12 +25,12 @@ public class ContactModificationTest extends BaseTest {
     public void testContactModificationTest() {
         Contacts before = app.contacts().all();
         ContactsData modifyContact = before.iterator().next();
-        ContactsData contact = new ContactsData()
+        ContactsData contact = new ContactsData().withId(modifyContact.getId())
                 .withFirstName("Jon").withLastName("Contor").withCompany("BSS_New").withNickName("Briniel").withHomePhone("86-08-58")
                 .withMobilePhone("89272107632").withWorkPhone("89457245986").withEmail("dragon1239@ya.ru");
         app.contacts().modify(contact);
         Contacts after = app.contacts().all();
-        assertEquals(after.size(), before.size());
+        assertThat(after.size(), equalTo(before.size()));
         assertThat(after, equalTo(before.withOut(modifyContact).withAdded(contact)));
 
     }
