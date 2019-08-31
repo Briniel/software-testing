@@ -1,6 +1,7 @@
 package ru.stqa.pft.addressbook.test;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
 
@@ -8,12 +9,16 @@ import java.util.List;
 
 public class GroupDeletTest extends BaseTest {
 
-    @Test
-    public void testGroupDelet(){
+    @BeforeMethod
+    public void ensurePreconditions() {
         app.getNavigationHelper().goToGroupsPage();
-        if (!app.getGroupHelper().isThereAGroup()) {
+        if (! app.getGroupHelper().isThereAGroup()){
             app.getGroupHelper().creatGroup(new GroupData("test-4", null, "New group"));
         }
+    }
+
+    @Test
+    public void testGroupDelet(){
         List<GroupData> before = app.getGroupHelper().getGroupList();
         app.getGroupHelper().selectGroup(before.size() - 1);
         app.getGroupHelper().deletSelectGroup();
