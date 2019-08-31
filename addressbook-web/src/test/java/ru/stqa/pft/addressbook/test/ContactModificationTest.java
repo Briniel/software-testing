@@ -7,11 +7,10 @@ import ru.stqa.pft.addressbook.model.ContactsData;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.testng.Assert.assertEquals;
 
 public class ContactModificationTest extends BaseTest {
 
-    @BeforeMethod
+    @BeforeMethod(enabled = false)
     public void ensurePreconditions() {
         app.goTo().goToHomePage();
         if (! app.contacts().isThereAContact()){
