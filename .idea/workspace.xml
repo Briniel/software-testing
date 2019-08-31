@@ -94,7 +94,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ContactModificationTest.testContactModificationTest">
+  <component name="RunManager" selected="TestNG.ContactPhoneTest">
     <configuration name="ContactModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web.test" />
       <extension name="coverage">
@@ -124,6 +124,23 @@
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.ContactModificationTest" />
       <option name="METHOD_NAME" value="testContactModificationTest" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactPhoneTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.ContactPhoneTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -165,36 +182,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ru.stqa.pft.addressbook.test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="TestNG.ru.stqa.pft.addressbook.test" />
       <item itemvalue="TestNG.ContactModificationTest" />
       <item itemvalue="TestNG.ContactsCreatTest" />
       <item itemvalue="TestNG.GroupCreatTest.testBadGroupCreat" />
       <item itemvalue="TestNG.ContactModificationTest.testContactModificationTest" />
+      <item itemvalue="TestNG.ContactPhoneTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactPhoneTest" />
         <item itemvalue="TestNG.ContactModificationTest.testContactModificationTest" />
         <item itemvalue="TestNG.GroupCreatTest.testBadGroupCreat" />
         <item itemvalue="TestNG.ContactsCreatTest" />
         <item itemvalue="TestNG.ContactModificationTest" />
-        <item itemvalue="TestNG.ru.stqa.pft.addressbook.test" />
       </list>
     </recent_temporary>
   </component>
@@ -223,5 +224,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactsHelper.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
