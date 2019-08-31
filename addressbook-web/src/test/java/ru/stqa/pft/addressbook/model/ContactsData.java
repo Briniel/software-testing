@@ -14,6 +14,12 @@ public class ContactsData {
     private String group;
     private String email;
 
+    public String getAllPhone() {
+        return allPhone;
+    }
+
+    private String allPhone;
+
     public int getId() {
         return id;
     }
@@ -119,6 +125,13 @@ public class ContactsData {
 
     public ContactsData withEmail(String email) {
         this.email = email;
+        return this;
+    }
+
+
+
+    public ContactsData withAllPhone(String allPhone) {
+        this.allPhone = allPhone;
         return this;
     }
 
