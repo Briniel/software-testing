@@ -10,7 +10,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactModificationTest extends BaseTest {
 
-    @BeforeMethod(enabled = false)
+    @BeforeMethod
     public void ensurePreconditions() {
         app.goTo().goToHomePage();
         if (! app.contacts().isThereAContact()){
@@ -28,8 +28,8 @@ public class ContactModificationTest extends BaseTest {
                 .withFirstName("Jon").withLastName("Contor").withCompany("BSS_New").withNickName("Briniel").withHomePhone("86-08-58")
                 .withMobilePhone("89272107632").withWorkPhone("89457245986").withEmail("dragon1239@ya.ru");
         app.contacts().modify(contact);
+        assertThat(app.contacts().count(), equalTo(before.size()));
         Contacts after = app.contacts().all();
-        assertThat(after.size(), equalTo(before.size()));
         assertThat(after, equalTo(before.withOut(modifyContact).withAdded(contact)));
 
     }

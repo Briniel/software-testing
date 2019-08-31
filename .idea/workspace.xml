@@ -94,24 +94,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ContactsCreatTest">
-    <configuration name="addressbook-web" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TestNG.GroupCreatTest.testBadGroupCreat">
     <configuration name="ContactModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web.test" />
       <extension name="coverage">
@@ -163,6 +146,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GroupCreatTest.testBadGroupCreat" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.GroupCreatTest" />
+      <option name="METHOD_NAME" value="testBadGroupCreat" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ru.stqa.pft.addressbook.test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web.test" />
       <extension name="coverage">
@@ -180,19 +181,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.addressbook-web" />
       <item itemvalue="TestNG.GroupCreatTest (1)" />
       <item itemvalue="TestNG.ru.stqa.pft.addressbook.test" />
       <item itemvalue="TestNG.ContactModificationTest" />
       <item itemvalue="TestNG.ContactsCreatTest" />
+      <item itemvalue="TestNG.GroupCreatTest.testBadGroupCreat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupCreatTest.testBadGroupCreat" />
         <item itemvalue="TestNG.ContactsCreatTest" />
         <item itemvalue="TestNG.ContactModificationTest" />
         <item itemvalue="TestNG.ru.stqa.pft.addressbook.test" />
         <item itemvalue="TestNG.GroupCreatTest (1)" />
-        <item itemvalue="Gradle.addressbook-web" />
       </list>
     </recent_temporary>
   </component>

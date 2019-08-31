@@ -94,6 +94,10 @@ public class ContactsHelper extends HelperBase {
         click(By.linkText("add new"));
     }
 
+    public int count() {
+        return wd.findElements(By.xpath("//tr[@name='entry']")).size();
+    }
+
     private Contacts contactCach = null;
 
     public Contacts all() {
