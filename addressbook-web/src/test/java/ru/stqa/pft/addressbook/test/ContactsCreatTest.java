@@ -1,27 +1,26 @@
 package ru.stqa.pft.addressbook.test;
 
-import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.Test;
+import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.ContactsData;
 
-import java.util.Comparator;
-import java.util.List;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.testng.Assert.assertEquals;
 
 public class ContactsCreatTest extends BaseTest {
 
-    @Test(enabled = false)
+    @Test
     public void testUserCreat(){
         app.goTo().goToHomePage();
-        List<ContactsData> before = app.getContactsHelper().getContactsList();
-        ContactsData contact = new ContactsData("Mikhail", "Alekseevich", "Ivanov", "BSS", "Brin", "c. Moscow", "96-08-56", "89272106632", "89457257986", "test-1", "dragon1239@mail.ru");
-        app.getContactsHelper().contactCreate(contact);
-        List<ContactsData> after = app.getContactsHelper().getContactsList();
-        Assert.assertEquals(after.size(), before.size() + 1);
-
-        before.add(contact);
-        Comparator<? super ContactsData> byId = (c1, c2) -> Integer.compare(c1.getId(), c2.getId());
-        before.sort(byId);
-        after.sort(byId);
-        Assert.assertEquals(after, before);
+        Contacts before = app.contacts().all();
+        ContactsData contact = new ContactsData()
+                .withFirstName("Mikhail").withMiddleName("Alekseevich").withLastName("Ivanov").withCompany("BSS").withNickName("Brin").withAddress("c. Moscow")
+                .withHomePhone("96-08-56").withMobilePhone("89272106632").withWorkPhone("89457257986").withGroup("test-1").withEmail("dragon1239@mail.ru");
+        app.contacts().contactCreate(contact);
+        Contacts after = app.contacts().all();
+        assertEquals(after.size(), before.size() + 1);
+        assertThat(after, equalTo(
+                before.withAdded(contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
     }
 }

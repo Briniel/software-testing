@@ -86,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.addressbook-web">
+  <component name="RunManager" selected="TestNG.GroupCreatTest">
     <configuration name="addressbook-web" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -104,19 +104,43 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="build" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
-      <module name="addressbook-web" />
-      <setting name="path" value="file://$PROJECT_DIR$/addressbook-web/build.gradle" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$/addressbook-web" />
-      <setting name="debug" value="false" />
+    <configuration name="ContactModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="software-testing.addressbook-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.ContactModificationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactsCreatTest.testUserCreat" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="software-testing.addressbook-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.ContactsCreatTest" />
+      <option name="METHOD_NAME" value="testUserCreat" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="GroupCreatTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web.test" />
+      <module name="software-testing.addressbook-web.test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
@@ -132,8 +156,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupDeletTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web.test" />
+    <configuration name="ru.stqa.pft.addressbook.test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="software-testing.addressbook-web.test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
@@ -141,25 +165,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.GroupDeletTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GroupModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.GroupModificationTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -168,18 +174,18 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.addressbook-web" />
-      <item itemvalue="Groovy.build" />
+      <item itemvalue="TestNG.ContactModificationTest" />
+      <item itemvalue="TestNG.ContactsCreatTest.testUserCreat" />
+      <item itemvalue="TestNG.ru.stqa.pft.addressbook.test" />
       <item itemvalue="TestNG.GroupCreatTest" />
-      <item itemvalue="TestNG.GroupDeletTest" />
-      <item itemvalue="TestNG.GroupModificationTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.addressbook-web" />
-        <item itemvalue="Groovy.build" />
-        <item itemvalue="TestNG.GroupModificationTest" />
-        <item itemvalue="TestNG.GroupDeletTest" />
         <item itemvalue="TestNG.GroupCreatTest" />
+        <item itemvalue="TestNG.ru.stqa.pft.addressbook.test" />
+        <item itemvalue="TestNG.ContactsCreatTest.testUserCreat" />
+        <item itemvalue="TestNG.ContactModificationTest" />
+        <item itemvalue="Gradle.addressbook-web" />
       </list>
     </recent_temporary>
   </component>
@@ -208,16 +214,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactsHelper.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

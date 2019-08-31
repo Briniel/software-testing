@@ -4,10 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.ContactsData;
-import ru.stqa.pft.addressbook.model.GroupData;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ContactsHelper extends HelperBase {
@@ -26,7 +25,7 @@ public class ContactsHelper extends HelperBase {
         type(By.name("address"), contactsData.getAddress());
         type(By.name("home"), contactsData.getHomePhone());
         type(By.name("mobile"), contactsData.getMobilePhone());
-        if (creation){
+        if (creation) {
             dropdownListSelect(By.name("new_group"), contactsData.getGroup());
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")), "На форме модификации контакта появилось поля группы");
@@ -35,12 +34,32 @@ public class ContactsHelper extends HelperBase {
         type(By.name("email"), contactsData.getEmail());
     }
 
+    public void modify(ContactsData contact) {
+        initContactModificationById(contact.getId());
+        createContact(contact, false);
+        submitContactModification();
+        returnHomePage();
+    }
+
+    public void delete(ContactsData contact) {
+        selectContactById(contact.getId());
+        deleteSelectContact();
+        returnHomePage();
+    }
+
+    public void contactCreate(ContactsData contact) {
+        goToUserCreatePage();
+        createContact(contact, true);
+        submitContactCreation();
+        returnHomePage();
+    }
+
     public void submitContactCreation() {
         click(By.xpath("(//input[@name='submit'])[2]"));
     }
 
-    public void selectContact(int index) {
-        wd.findElements(By.name("selected[]")).get(index).click();
+    public void selectContactById(int id) {
+        wd.findElement(By.id(String.valueOf(id))).click();
     }
 
     public void deleteSelectContact() {
@@ -51,8 +70,8 @@ public class ContactsHelper extends HelperBase {
         wd.switchTo().alert().accept();
     }
 
-    public void initContactModification(int index) {
-        wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
+    public void initContactModificationById(int id) {
+        wd.findElement(By.xpath("//input[@id='"+id+"']/../..//img[@alt='Edit']")).click();
     }
 
     public void submitContactModification() {
@@ -71,22 +90,14 @@ public class ContactsHelper extends HelperBase {
         click(By.linkText("add new"));
     }
 
-    public void contactCreate(ContactsData contact) {
-        goToUserCreatePage();
-        createContact(contact, true);
-        submitContactCreation();
-        returnHomePage();
-    }
-
-    public List<ContactsData> getContactsList() {
-        List<ContactsData> contacts = new ArrayList<ContactsData>();
+    public Contacts all() {
+        Contacts contacts = new Contacts();
         List<WebElement> elements = wd.findElements(By.xpath("//tr[@name='entry']"));
-        for (WebElement element: elements){
+        for (WebElement element : elements) {
             String firstName = element.findElement(By.xpath("//td[3]")).getText();
             String lastName = element.findElement(By.xpath("//td[2]")).getText();
             int id = Integer.parseInt(element.findElement(By.xpath("//td//input")).getAttribute("id"));
-            ContactsData contact = new ContactsData(id, firstName, null, lastName, null, null, null, null, null, null, null, null);
-            contacts.add(contact);
+            contacts.add(new ContactsData().withId(id).withFirstName(firstName).withLastName(lastName));
         }
         return contacts;
     }
