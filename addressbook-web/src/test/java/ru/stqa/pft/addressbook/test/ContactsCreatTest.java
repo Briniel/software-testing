@@ -11,7 +11,7 @@ public class ContactsCreatTest extends BaseTest {
 
     @Test(enabled = false)
     public void testUserCreat(){
-        app.getNavigationHelper().goToHomePage();
+        app.goTo().goToHomePage();
         List<ContactsData> before = app.getContactsHelper().getContactsList();
         ContactsData contact = new ContactsData("Mikhail", "Alekseevich", "Ivanov", "BSS", "Brin", "c. Moscow", "96-08-56", "89272106632", "89457257986", "test-1", "dragon1239@mail.ru");
         app.getContactsHelper().contactCreate(contact);
