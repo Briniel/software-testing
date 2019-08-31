@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="addressbook-web:test" external.linked.project.path="$MODULE_DIR$/../../addressbook-web" external.root.project.path="$MODULE_DIR$/../../addressbook-web" external.system.id="GRADLE" external.system.module.group="addressbook-web" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
-    <output-test url="file://$MODULE_DIR$/../../addressbook-web/build/classes/java/test" />
+    <output-test url="file://$MODULE_DIR$/../../addressbook-web/out/test/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../addressbook-web/src/test">
       <sourceFolder url="file://$MODULE_DIR$/../../addressbook-web/src/test/java" isTestSource="true" />
@@ -12,6 +12,7 @@
     <orderEntry type="module" module-name="software-testing.addressbook-web.main" />
     <orderEntry type="library" name="Gradle: org.testng:testng:6.14.3" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-java:3.141.59" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:java-hamcrest:2.0.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.beust:jcommander:1.72" level="project" />
     <orderEntry type="library" name="Gradle: org.apache-extras.beanshell:bsh:2.0b6" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-chrome-driver:3.141.59" level="project" />

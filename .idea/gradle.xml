@@ -26,6 +26,7 @@
             <option value="$PROJECT_DIR$/addressbook-web-test" />
           </set>
         </option>
+        <option name="useAutoImport" value="true" />
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
@@ -38,6 +39,7 @@
             <option value="$PROJECT_DIR$/sandbox" />
           </set>
         </option>
+        <option name="useAutoImport" value="true" />
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>

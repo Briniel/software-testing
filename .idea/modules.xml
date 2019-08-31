@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sandbox.test.iml" filepath="$PROJECT_DIR$/.idea/modules/sandbox.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/software-testing.addressbook-web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/software-testing.addressbook-web.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/software-testing.addressbook-web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/software-testing.addressbook-web.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/software-testing.sandbox.main.iml" filepath="$PROJECT_DIR$/.idea/modules/software-testing.sandbox.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/software-testing.sandbox.test.iml" filepath="$PROJECT_DIR$/.idea/modules/software-testing.sandbox.test.iml" />
     </modules>
   </component>
 </project>
