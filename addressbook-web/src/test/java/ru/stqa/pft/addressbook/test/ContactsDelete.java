@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ContactsDelete extends BaseTest{
 
-    @Test
+    @Test(enabled = false)
     public void testContactsDelete(){
         if (! app.getContactsHelper().isThereAContact()){
             app.getContactsHelper().contactCreate(new ContactsData("Mikhail", "Alekseevich", "Ivanov", "BSS", "Brin", "c. Moscow", "96-08-56", "89272106632", "89457257986", "test-1", "dragon1239@mail.ru"));

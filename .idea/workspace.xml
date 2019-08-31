@@ -79,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ContactModificationTest">
+  <component name="RunManager" selected="TestNG.ru.stqa.pft.addressbook.test">
     <configuration name="ContactModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web.test" />
       <extension name="coverage">
@@ -149,7 +149,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupCreatTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ru.stqa.pft.addressbook.test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web.test" />
       <extension name="coverage">
         <pattern>
@@ -158,8 +158,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.GroupCreatTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -167,19 +166,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.GroupCreatTest" />
       <item itemvalue="TestNG.ContactsDelete" />
       <item itemvalue="TestNG.ContactsDelete.testContactsDelete" />
       <item itemvalue="TestNG.ContactsCreatTest" />
       <item itemvalue="TestNG.ContactModificationTest" />
+      <item itemvalue="TestNG.ru.stqa.pft.addressbook.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ru.stqa.pft.addressbook.test" />
         <item itemvalue="TestNG.ContactModificationTest" />
         <item itemvalue="TestNG.ContactsCreatTest" />
         <item itemvalue="TestNG.ContactsDelete.testContactsDelete" />
         <item itemvalue="TestNG.ContactsDelete" />
-        <item itemvalue="TestNG.GroupCreatTest" />
       </list>
     </recent_temporary>
   </component>
@@ -214,8 +213,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactsHelper.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="16" />
+          <line>58</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
