@@ -32,6 +32,7 @@ public class ContactsHelper extends HelperBase {
             Assert.assertFalse(isElementPresent(By.name("new_group")), "На форме модификации контакта появилось поля группы");
         }
         type(By.name("work"), contactsData.getWorkPhone());
+        attach(By.name("photo"), contactsData.getPhoto());
         type(By.name("email"), contactsData.getEmail());
     }
 

@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6d83e55-fc76-4e23-ac31-6e68cc402fb1" name="Default Changelist" comment="" />
+    <list default="true" id="e6d83e55-fc76-4e23-ac31-6e68cc402fb1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook-web/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook-web/src/test/resources/stru.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web/build/classes/java/test/META-INF/addressbook-web.main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web/build/classes/java/test/ru/stqa/pft/addressbook/model/ContactsData.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web/build/classes/java/test/ru/stqa/pft/addressbook/model/ContactsData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web/build/classes/java/test/ru/stqa/pft/addressbook/test/ContactAddressTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web/build/classes/java/test/ru/stqa/pft/addressbook/test/ContactAddressTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web/build/classes/java/test/ru/stqa/pft/addressbook/test/ContactsCreatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web/build/classes/java/test/ru/stqa/pft/addressbook/test/ContactsCreatTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactsHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactsHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/appmanager/HelperBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/model/ContactsData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/model/ContactsData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/test/ContactsCreatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/test/ContactsCreatTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/addressbook-web">
@@ -64,12 +81,15 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1PQsP6eyVYOd7amVMKfkzAFH52b" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="public" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web/src/test/resources" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -94,7 +114,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ContactAddressTest">
+  <component name="RunManager" selected="TestNG.ContactsCreatTest.testCurrentDir (1)">
     <configuration name="ContactAddressTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web.test" />
       <extension name="coverage">
@@ -129,24 +149,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactModificationTest.testContactModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.ContactModificationTest" />
-      <option name="METHOD_NAME" value="testContactModificationTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ContactPhoneTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web.test" />
       <extension name="coverage">
@@ -164,7 +166,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupCreatTest.testBadGroupCreat" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactsCreatTest.testCurrentDir (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="software-testing.addressbook-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.ContactsCreatTest" />
+      <option name="METHOD_NAME" value="testCurrentDir" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactsCreatTest.testCurrentDir" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web.test" />
       <extension name="coverage">
         <pattern>
@@ -173,8 +193,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.GroupCreatTest" />
-      <option name="METHOD_NAME" value="testBadGroupCreat" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.ContactsCreatTest" />
+      <option name="METHOD_NAME" value="testCurrentDir" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -183,19 +203,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.GroupCreatTest.testBadGroupCreat" />
-      <item itemvalue="TestNG.ContactModificationTest.testContactModificationTest" />
       <item itemvalue="TestNG.ContactPhoneTest" />
       <item itemvalue="TestNG.ContactEmailTest" />
       <item itemvalue="TestNG.ContactAddressTest" />
+      <item itemvalue="TestNG.ContactsCreatTest.testCurrentDir" />
+      <item itemvalue="TestNG.ContactsCreatTest.testCurrentDir (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactsCreatTest.testCurrentDir (1)" />
+        <item itemvalue="TestNG.ContactsCreatTest.testCurrentDir" />
         <item itemvalue="TestNG.ContactAddressTest" />
         <item itemvalue="TestNG.ContactEmailTest" />
         <item itemvalue="TestNG.ContactPhoneTest" />
-        <item itemvalue="TestNG.ContactModificationTest.testContactModificationTest" />
-        <item itemvalue="TestNG.GroupCreatTest.testBadGroupCreat" />
       </list>
     </recent_temporary>
   </component>
