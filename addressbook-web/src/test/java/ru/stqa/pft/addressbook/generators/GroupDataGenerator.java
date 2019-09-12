@@ -3,6 +3,7 @@ package ru.stqa.pft.addressbook.generators;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
+import com.thoughtworks.xstream.XStream;
 import ru.stqa.pft.addressbook.model.GroupData;
 
 import java.io.File;
@@ -20,6 +21,9 @@ public class GroupDataGenerator {
     @Parameter(names = "-f", description = "Tarfet file")
     public String file;
 
+    @Parameter(names = "-d", description = "Data format")
+    public String format;
+
     public static void main(String[] args) throws IOException {
         GroupDataGenerator generator = new GroupDataGenerator();
         JCommander jCommander = new JCommander(generator);
@@ -34,19 +38,34 @@ public class GroupDataGenerator {
 
     private void run() throws IOException {
         List<GroupData> groups = generateGoups(count);
-        save(groups, new File(file));
+        if (format.equals("csv")){
+            saveAsCsv(groups, new File(file));
+        } else if (format.equals("xml")){
+            saveAsXml(groups, new File(file));
+        } else {
+            System.out.println("Не известный формат "+format);
+        }
+    }
+
+    private void saveAsXml(List<GroupData> groups, File file) throws IOException {
+        XStream xStream = new XStream();
+        xStream.processAnnotations(GroupData.class);
+        String xml = xStream.toXML(groups);
+        Writer writer = new FileWriter(file);
+        writer.write(xml);
+        writer.close();
     }
 
     private List<GroupData> generateGoups(int count) {
         List<GroupData> groups = new ArrayList<>();
         for (int i = 0; i < count; i++) {
             groups.add(new GroupData().withName(String.format("test %s", i))
-                    .withHeader(String.format("header %s", i)).withFooter(String.format("footer %s", i)));
+                    .withHeader(String.format("header\n%s", i)).withFooter(String.format("footer\n%s", i)));
         }
         return groups;
     }
 
-    private void save(List<GroupData> groups, File file) throws IOException {
+    private void saveAsCsv(List<GroupData> groups, File file) throws IOException {
         System.out.println(new File(".").getAbsolutePath());
         Writer writer = new FileWriter(file);
         for (GroupData group : groups) {
