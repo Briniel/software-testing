@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4144c55-a2c7-458c-b6b9-fe09c8c6380f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/groups.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/generators/ContactDataGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/generators/GroupDataGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/generators/GroupDataGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/model/GroupData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/model/GroupData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/GroupCreatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/GroupCreatTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +75,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreatTest.testGroupCreat">
+  <component name="RunManager" selected="Application.ContactDataGenerator">
+    <configuration name="ContactDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.ContactDataGenerator" />
+      <module name="addressbook-web.test" />
+      <option name="PROGRAM_PARAMETERS" value="-c 3 -f src/test/resources/contacts.json" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.generators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web.test" />
@@ -131,23 +139,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactsDelete" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.ContactsDelete" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GroupCreatTest.testGroupCreat" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web.test" />
       <extension name="coverage">
@@ -168,18 +159,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.GroupDataGenerator" />
+      <item itemvalue="Application.ContactDataGenerator" />
       <item itemvalue="TestNG.ContactsCreatTest" />
-      <item itemvalue="TestNG.ContactsDelete" />
       <item itemvalue="TestNG.ContactsCreatTest.testCurrentDir" />
       <item itemvalue="TestNG.GroupCreatTest.testGroupCreat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ContactDataGenerator" />
         <item itemvalue="TestNG.GroupCreatTest.testGroupCreat" />
         <item itemvalue="Application.GroupDataGenerator" />
         <item itemvalue="TestNG.ContactsCreatTest" />
         <item itemvalue="TestNG.ContactsCreatTest.testCurrentDir" />
-        <item itemvalue="TestNG.ContactsDelete" />
       </list>
     </recent_temporary>
   </component>
