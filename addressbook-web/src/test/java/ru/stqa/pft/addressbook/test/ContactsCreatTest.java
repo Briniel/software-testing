@@ -1,10 +1,20 @@
 package ru.stqa.pft.addressbook.test;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.ContactsData;
+import ru.stqa.pft.addressbook.model.GroupData;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -12,14 +22,25 @@ import static org.testng.Assert.assertEquals;
 
 public class ContactsCreatTest extends BaseTest {
 
-    @Test
-    public void testUserCreat(){
+    @DataProvider
+    public Iterator<Object[]> valiContactsFromJson() throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.json")));
+        String json = "";
+        String line = reader.readLine();
+        while (line != null) {
+            json += line;
+            line = reader.readLine();
+        }
+        Gson gson = new Gson();
+        List<ContactsData> contacts = gson.fromJson(json, new TypeToken<List<ContactsData>>() {}.getType());
+        return contacts.stream().map((c) -> new Object[] {c}).collect(Collectors.toList()).iterator();
+    }
+
+    @Test(dataProvider = "valiContactsFromJson")
+    public void testUserCreat(ContactsData contact){
         app.goTo().goToHomePage();
         Contacts before = app.contacts().all();
-        File photo = new File("src/test/resources/stru.png");
-        ContactsData contact = new ContactsData()
-                .withFirstName("Mikhail").withMiddleName("Alekseevich").withLastName("Ivanov").withCompany("BSS").withNickName("Brin").withAddress("c. Moscow")
-                .withHomePhone("96-08-56").withMobilePhone("89272106632").withWorkPhone("89457257986").withPhoto(photo).withEmail("dragon1239@mail.ru").withGroup("weewg");
+//        File photo = new File("src/test/resources/stru.png");
         app.contacts().contactCreate(contact);
         assertThat(app.contacts().count(), equalTo(before.size() + 1));
         Contacts after = app.contacts().all();
