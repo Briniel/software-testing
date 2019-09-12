@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4144c55-a2c7-458c-b6b9-fe09c8c6380f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng-contact.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng-group.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/generators/GroupDataGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/generators/GroupDataGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/test/ContactsCreatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/test/ContactsCreatTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/test/GroupCreatTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/test/GroupCreatTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/test/GroupCreatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/test/GroupCreatTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/contacts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/test/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/test/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/resources/testng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/BaseTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,13 +59,16 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Git\software-testing\addressbook-web\src\test" />
-      <recent name="D:\Git\software-testing\addressbook-web\src\test\java\resources" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.stqa.pft.addressbook.appmanager" />
       <recent name="ru.stqa.pft.addressbook" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\software-testing\addressbook-web\src\test\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\software-testing\addressbook-web\src\test" />
+      <recent name="D:\Git\software-testing\addressbook-web\src\test\java\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -82,7 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.D:/Git/software-testing/addressbook-web/src/test/resources/testng.xml">
+  <component name="RunManager" selected="TestNG.GroupCreatTest.testGroupCreat">
     <configuration name="ContactDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.ContactDataGenerator" />
       <module name="addressbook-web.test" />
@@ -146,10 +147,18 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.GroupCreatTest" />
       <option name="METHOD_NAME" value="testGroupCreat" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -165,9 +174,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupCreatTest.testGroupCreat" />
         <item itemvalue="TestNG.D:/Git/software-testing/addressbook-web/src/test/resources/testng.xml" />
         <item itemvalue="Application.ContactDataGenerator" />
-        <item itemvalue="TestNG.GroupCreatTest.testGroupCreat" />
         <item itemvalue="Application.GroupDataGenerator" />
         <item itemvalue="TestNG.ContactsCreatTest" />
       </list>
