@@ -8,10 +8,5 @@
     "name": "test 1",
     "header": "header\n1",
     "footer": "footer\n1"
-  },
-  {
-    "name": "test 2",
-    "header": "header\n2",
-    "footer": "footer\n2"
   }
 ]
