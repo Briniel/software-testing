@@ -32,13 +32,13 @@ public class ApplicationManager {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
         if (browser.equals(BrowserType.CHROME)){
-            System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\ChromDriver\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", properties.getProperty("driver.browserCHROME"));
             wd = new ChromeDriver();
         } else if (browser.equals(BrowserType.FIREFOX)) {
-            System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\ChromDriver\\geckodriver.exe");
+            System.setProperty("webdriver.chrome.driver", properties.getProperty("driver.browserFIREFOX"));
             wd = new FirefoxDriver();
         } else if (browser.equals(BrowserType.IE)) {
-            System.setProperty("webdriver.ie.driver","C:\\Program Files\\ChromDriver\\IEDriverServer.exe");
+            System.setProperty("webdriver.ie.driver", properties.getProperty("driver.browserIE"));
             wd = new InternetExplorerDriver();
         }
 
