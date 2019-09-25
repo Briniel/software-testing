@@ -27,7 +27,11 @@ public class ContactsHelper extends HelperBase {
         type(By.name("home"), contactsData.getHomePhone());
         type(By.name("mobile"), contactsData.getMobilePhone());
         if (creation) {
-            dropdownListSelect(By.name("new_group"), contactsData.getGroup());
+            if (contactsData.getGroups().size() > 0){
+                Assert.assertTrue(contactsData.getGroups().size() == 1);
+                dropdownListSelect(By.name("new_group"), contactsData.getGroups().iterator().next().getName());
+            }
+
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")), "На форме модификации контакта появилось поля группы");
         }
