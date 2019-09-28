@@ -3,6 +3,7 @@ package ru.stqa.pft.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.ContactsData;
@@ -55,12 +56,25 @@ public class ContactsHelper extends HelperBase {
         returnHomePage();
     }
 
+    public void addtogroup(ContactsData contact) {
+        selectContactById(contact.getId());
+        addSelectedContactToGroup(contact);
+        returnHomePage();
+    }
+
     public void contactCreate(ContactsData contact) {
         goToUserCreatePage();
         createContact(contact, true);
         submitContactCreation();
         contactCach = null;
         returnHomePage();
+    }
+
+    public void addSelectedContactToGroup(ContactsData contactData) {
+        new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(contactData.getGroups().iterator().next().getName());
+        click(By.xpath("//input[@value='Add to']"));
+//    wd.switchTo().alert().accept();
+        wd.findElement(By.cssSelector("div.msgbox"));
     }
 
     public void submitContactCreation() {
