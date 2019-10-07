@@ -2,33 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6d83e55-fc76-4e23-ac31-6e68cc402fb1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/addressbook-web/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/mantis-test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/mantis-test.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/mantis-test.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/mantis-tests.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/build/classes/java/test/ru/stqa/pft/addressbook/appmanager/ContactsHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web/build/classes/java/test/ru/stqa/pft/addressbook/appmanager/ContactsHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/build/classes/java/test/ru/stqa/pft/addressbook/appmanager/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web/build/classes/java/test/ru/stqa/pft/addressbook/appmanager/HelperBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/build/classes/java/test/ru/stqa/pft/addressbook/test/ContactsCreatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web/build/classes/java/test/ru/stqa/pft/addressbook/test/ContactsCreatTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/appmanager/ApplicationManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/appmanager/ContactsHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/appmanager/GroupHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/appmanager/HelperBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/appmanager/NavigationHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/appmanager/SessionHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/model/Contacts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/model/ContactsData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/model/GroupData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/model/Groups.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/test/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/test/ContactAddressTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/test/ContactEmailTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/test/ContactModificationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/test/ContactPhoneTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/test/ContactsCreatTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/test/ContactsDelete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/test/GroupCreatTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/test/GroupDeletTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web/out/test/classes/ru/stqa/pft/addressbook/test/GroupModificationTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +29,16 @@
     <projectState path="$PROJECT_DIR$/addressbook-web-test">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/mantis-test">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/mantis-tests">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/sandbox">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/test-mantis">
       <ProjectState />
     </projectState>
   </component>
@@ -102,10 +94,10 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="public" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test-mantis" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.44942528" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">

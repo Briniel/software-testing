@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook-web.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook-web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook-web.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook-web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook-web.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mantis-test.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mantis-test.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mantis-test.test.iml" filepath="$PROJECT_DIR$/.idea/modules/mantis-test.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mantis-tests.iml" filepath="$PROJECT_DIR$/.idea/modules/mantis-tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sandbox.iml" filepath="$PROJECT_DIR$/.idea/modules/sandbox.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sandbox.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sandbox.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sandbox.test.iml" filepath="$PROJECT_DIR$/.idea/modules/sandbox.test.iml" />
@@ -12,6 +15,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/software-testing.addressbook-web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/software-testing.addressbook-web.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/software-testing.sandbox.main.iml" filepath="$PROJECT_DIR$/.idea/modules/software-testing.sandbox.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/software-testing.sandbox.test.iml" filepath="$PROJECT_DIR$/.idea/modules/software-testing.sandbox.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test-mantis.iml" filepath="$PROJECT_DIR$/.idea/modules/test-mantis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test-mantis.main.iml" filepath="$PROJECT_DIR$/.idea/modules/test-mantis.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test-mantis.test.iml" filepath="$PROJECT_DIR$/.idea/modules/test-mantis.test.iml" />
     </modules>
   </component>
 </project>
