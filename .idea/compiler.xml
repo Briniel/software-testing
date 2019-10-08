@@ -8,6 +8,8 @@
       <module name="addressbook-web.test" target="1.8" />
       <module name="mantis-test.main" target="1.8" />
       <module name="mantis-test.test" target="1.8" />
+      <module name="rest-sample.main" target="1.8" />
+      <module name="rest-sample.test" target="1.8" />
       <module name="sandbox.main" target="1.8" />
       <module name="sandbox.test" target="1.8" />
       <module name="software-testing.addressbook-web.main" target="1.8" />
