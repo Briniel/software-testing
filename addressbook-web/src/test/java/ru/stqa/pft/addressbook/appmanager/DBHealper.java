@@ -42,5 +42,13 @@ public class DBHealper {
         return new Contacts(result);
     }
 
+    public Contacts selectContactFromDbById(int id) {
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        List<ContactsData> contacts = session.createQuery("from ContactInformation where id = '" + id + "'").list();
+        session.getTransaction().commit();
+        session.close();
+        return new Contacts(contacts);
+    }
 
 }

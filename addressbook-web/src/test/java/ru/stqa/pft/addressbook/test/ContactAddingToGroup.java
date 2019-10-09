@@ -7,7 +7,10 @@ import ru.stqa.pft.addressbook.model.ContactsData;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
 
-import static org.testng.Assert.assertEquals;
+import java.util.Iterator;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 
 public class ContactAddingToGroup extends BaseTest {
     @BeforeMethod
@@ -27,14 +30,29 @@ public class ContactAddingToGroup extends BaseTest {
 
     @Test
     public void testContactAddingToGroup(){
+        Contacts contacts = app.db().contacts();
+        ContactsData addedContact = contacts.iterator().next();
         Groups groups = app.db().groups();
-        Contacts before = app.db().contacts();
-        ContactsData addedContact = before.iterator().next();
-        ContactsData contact = new ContactsData().withId(addedContact.getId()).inGroup(groups.iterator().next());
-        if(contact.getGroups().size()!=app.db().groups().size()) {
-            app.contacts().addtogroup(contact);
-            Contacts after = app.db().contacts();
-            assertEquals(after.size(), before.size());
+        GroupData linkedGroup = groups.iterator().next();
+        Groups groupsOfAddedContact = addedContact.getGroups();
+        Iterator<ContactsData> iterator = contacts.iterator();
+        while (iterator.hasNext()) {
+            if (groupsOfAddedContact.equals(groups)) {
+                addedContact = iterator.next();
+                groupsOfAddedContact = addedContact.getGroups();
+            } else {
+                break;
+            }
         }
+        if (groupsOfAddedContact.equals(groups)) {
+            app.goTo().groupPage();
+            linkedGroup = new GroupData().withName("test11").withHeader("test12").withFooter("test13");
+            app.group().creat(linkedGroup);
+            app.contacts().addContact(addedContact, linkedGroup);
+        }
+        app.contacts().addContact(addedContact, linkedGroup);
+        ContactsData contactsAfter = app.db().selectContactFromDbById(addedContact.getId()).iterator().next();
+        Groups groupsOfAddedContactAfter = contactsAfter.getGroups();
+        assertThat(groupsOfAddedContact.withAdded(linkedGroup), equalTo(groupsOfAddedContactAfter));
     }
 }
