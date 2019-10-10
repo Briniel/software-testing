@@ -9,6 +9,7 @@ import ru.stqa.pft.addressbook.model.Groups;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
+import static org.testng.AssertJUnit.assertEquals;
 
 public class DeleteContactFromGroupTest extends BaseTest {
 
@@ -29,17 +30,31 @@ public class DeleteContactFromGroupTest extends BaseTest {
     @Test
     public void deleteContactFromGroup(){
         Groups groups = app.db().groups();
-        Contacts contacts = app.db().contacts();
-        ContactsData deletedContact = contacts.iterator().next();
-        Groups groupsOfDeletedContact = deletedContact.getGroups();
-        if (deletedContact.getGroups().size() == 0) {
-            app.contacts().addContact(deletedContact, groups.iterator().next());
-        } // проверяем, что у контакта есть группы, если нет, то привязываем контакт к группе
-        GroupData linkedGroup = groupsOfDeletedContact.iterator().next();
-        app.contacts().deleteContact(deletedContact, linkedGroup);
-        ContactsData contactsAfter = app.db().selectContactFromDbById(deletedContact.getId()).iterator().next();
-        Groups groupsOfDeletedContactAfter = contactsAfter.getGroups();
-        assertThat(groupsOfDeletedContact.withOut(linkedGroup), equalTo(groupsOfDeletedContactAfter));
+        Contacts contactBefore = app.db().contacts();
+        ContactsData contacts = contactBefore.iterator().next();
+
+        for (ContactsData contact : contactBefore){
+            Groups contactGroups = contact.getGroups();
+            if (contactGroups.size() != 0){
+                contacts = contact;
+                break;
+            }
+        }
+
+        if(contacts.getGroups().size() == 0){
+            GroupData groupToAdd = groups.iterator().next();
+            app.contacts().addContact(contacts, groupToAdd);
+        }
+
+        app.contacts().deleteContact(contacts, groups.iterator().next());
+
+        Groups groupAfter = app.db().groups();
+        Contacts contactAfter = app.db().contacts();
+
+        assertEquals(groups.size(), groupAfter.size());
+        assertEquals(contactBefore.size(), contactAfter.size());
+        assertThat(groupAfter, equalTo(groups));
+        assertThat(contactAfter, equalTo(contactBefore));
     }
 
 }

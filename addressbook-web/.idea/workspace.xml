@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4144c55-a2c7-458c-b6b9-fe09c8c6380f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/DeleteContactFromGroupTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactsHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactsHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/DBHealper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/DBHealper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/ContactAddressTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/ContactAddressTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/ContactEmailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/ContactEmailTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/ContactPhoneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/ContactPhoneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/ContactsCreatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/ContactsCreatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/ContactAddingToGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/ContactAddingToGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/DeleteContactFromGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/test/DeleteContactFromGroupTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -217,6 +213,14 @@
       <option name="presentableId" value="Default" />
       <updated>1565821264618</updated>
     </task>
+    <task id="LOCAL-00001" summary="Переделка 16 задания.">
+      <created>1570617123816</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570617123816</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,5 +235,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Переделка 16 задания." />
+    <option name="LAST_COMMIT_MESSAGE" value="Переделка 16 задания." />
   </component>
 </project>

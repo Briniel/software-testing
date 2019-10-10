@@ -15,7 +15,6 @@ import static org.hamcrest.Matchers.equalTo;
 public class ContactAddingToGroup extends BaseTest {
     @BeforeMethod
     public void ensurePreconditions(){
-        app.contacts().returnHomePage();
         if(app.db().contacts().size() == 0){
             app.contacts().contactCreate(new ContactsData().withFirstName("first2").withLastName("last2").withNickName("nick2").withCompany("company2").withAddress("address2")
                     .withMobilePhone("12345").withHomePhone("22").withWorkPhone("333")
