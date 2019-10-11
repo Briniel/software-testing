@@ -49,7 +49,6 @@ public class ContactAddingToGroup extends BaseTest {
             app.group().creat(linkedGroup);
             app.contacts().addContact(addedContact, linkedGroup);
         }
-        app.contacts().addContact(addedContact, linkedGroup);
         ContactsData contactsAfter = app.db().selectContactFromDbById(addedContact.getId()).iterator().next();
         Groups groupsOfAddedContactAfter = contactsAfter.getGroups();
         assertThat(groupsOfAddedContact.withAdded(linkedGroup), equalTo(groupsOfAddedContactAfter));
